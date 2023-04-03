@@ -8,3 +8,9 @@
  * [ ][ ][ ][X][ ]
  * [ ][ ][ ][ ][X]
  */
+
+ echo '[X][ ][ ][ ][ ]' . PHP_EOL;
+ echo '[ ][X][ ][ ][ ]' . PHP_EOL;
+ echo '[ ][ ][X][ ][ ]' . PHP_EOL;
+ echo '[ ][ ][ ][X][ ]' . PHP_EOL;
+ echo '[ ][ ][ ][ ][X]' . PHP_EOL;
