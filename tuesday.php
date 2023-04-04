@@ -14,3 +14,20 @@
  * Retirer 280 sur le premier, 56 sur le deuxième et rien sur le troisième.
  * Puis afficher le montant des trois ATM
  */
+
+ require 'ATM.php';
+
+ $atm1 = new ATM(1000);
+ $atm2 = new ATM(1000);
+ $atm3 = new ATM(1000);
+
+ echo "ATM 1 : " . $atm1->getAmount() . "€\n";
+ echo "ATM 2 : " . $atm2->getAmount() . "€\n";
+ echo "ATM 3 : " . $atm3->getAmount() . "€\n";
+
+ $atm1->withdraw(280);
+ $atm2->withdraw(56);
+
+ echo "\n\nATM 1 : " . $atm1->getAmount() . "€\n";
+ echo "ATM 2 : " . $atm2->getAmount() . "€\n";
+ echo "ATM 3 : " . $atm3->getAmount() . "€\n";
