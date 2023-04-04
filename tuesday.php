@@ -1,22 +1,16 @@
 <?php
-/**
- * 1 / Créer la fonction getDescSum() qui prend un chiffre en entrée et 
- *  l'additionne à sa suite dégressif pour renvoyer le total. 
+/***
+ * 1/ Créer une classe ATM (distributeur automatique), composé d'un attribut amount obligatoire
  * 
- * Exemple : 
- * getDescSum(5) 
- * -> 5 + 4 + 3 + 2 + 1 = 15
- * return 15
+ * 2 / Dans cette classe créer deux fonctions :
+ *    - withdraw() => qui prend un entier en entrée et renvoi un booléen : 
+ * True si le montant demandé a bien été retiré du montant total, 
+ * False s'il ne restait pas assez d'argent dans le distributeur
  * 
- * getDescSum(3) 
- * -> 3 + 2 + 1 = 6
- * return 6
+ *   - getAmount() => qui ne prend rien en entrée et renvoit le montant restant dans 
+ * le distributeur.
  * 
- * getDescSum(8) 
- * -> 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 36
- * return 36
- * 
- * 
- * 
- * 2/ Faire cette même fonction SANS boucle :-)
+ * 3 / Puis hors de la classe : instancier 3 ATM alimenté avec 1000 euros chacun. 
+ * Retirer 280 sur le premier, 56 sur le deuxième et rien sur le troisième.
+ * Puis afficher le montant des trois ATM
  */
