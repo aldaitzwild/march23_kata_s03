@@ -20,3 +20,28 @@
  * 
  * 2/ Faire une fonction identique mais cette fois SANS boucle :-)
  */
+
+ function getDescSum(int $start) : int 
+ {
+    $total = 0;
+    for($i = $start; $i > 0; $i--) {
+        $total += $i;
+    }
+
+    return $total;
+ }
+
+ echo 'Total pour 5 : ' . getDescSum(5) . PHP_EOL;
+ echo 'Total pour 3 : ' . getDescSum(3) . PHP_EOL;
+ echo 'Total pour 8 : ' . getDescSum(8) . PHP_EOL;
+
+
+ function getDescSumRecursive(int $start) : int 
+ {
+    if($start == 1) return 1;
+    return $start + getDescSumRecursive($start - 1);
+ }
+
+ echo 'Total pour 5 : ' . getDescSumRecursive(5) . PHP_EOL;
+ echo 'Total pour 3 : ' . getDescSumRecursive(3) . PHP_EOL;
+ echo 'Total pour 8 : ' . getDescSumRecursive(8) . PHP_EOL;
